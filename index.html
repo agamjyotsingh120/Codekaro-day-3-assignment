@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Color on Click</title>
+    <style>
+        body {
+            height: 300px;
+            width: 300px;
+            background-color:saddlebrown;
+            color: white;
+                       line-height: 300px;
+            cursor: pointer;
+            text-align:center;
+        
+        }
+       
+    </style>
+    </head>
+<body id="changeColor">
+
+    <h3>Click anywhere to change color</h3>
+
+    <script>
+        document.getElementById('changeColor').addEventListener('click', function() {
+            var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            this.style.backgroundColor = randomColor;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+#changeColor {
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    line-height: 300px;
+    cursor: pointer;
+}
